@@ -5,6 +5,7 @@ export const darkTheme = {
         secondary: '#368FE2',
         ternary: '#E8E8E8',
         homeGradient: 'linear-gradient(180deg, #05151D 1%, #041D2B 99%)',
+        primary2:'#041D2B'
     }
 }
 
@@ -15,5 +16,6 @@ export const lightTheme = {
         secondary: '#368FE2',
         ternary: '#041D2B',
         homeGradient: 'linear-gradient(180deg, #FFFFFF 1%, #E8E8E8 99%)',
+        primary2: '#E8E8E8',
     }
 }

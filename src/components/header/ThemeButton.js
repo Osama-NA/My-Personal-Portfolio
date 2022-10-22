@@ -8,11 +8,11 @@ const ThemeButton = () => {
   const changeTheme = () => {
     setTheme(theme.type === "dark" ? lightTheme : darkTheme);
   };
-  
+
   return (
-    <div className="theme-button" onClick={changeTheme}>
+    <button className="theme-button" onClick={changeTheme}>
       <div className="dot"></div>
-    </div>
+    </button>
   );
 };
 
