@@ -4,6 +4,7 @@ const HeaderStyle = styled.header`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 50;
 
     padding: 1.5rem 6rem;
     width: 100%;
