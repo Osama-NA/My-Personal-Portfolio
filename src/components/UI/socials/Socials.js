@@ -13,7 +13,7 @@ const Socials = () => {
           target='_blank' 
           rel='noreferrer'
         >
-          cv
+          <span>cv</span>
         </a>
       </li>
       <li><Link icon={faGithub} link='https://github.com/Osama-NA' /></li>

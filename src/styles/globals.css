@@ -22,10 +22,14 @@ a {
 h1 {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-p, li, a, button {
+h1 span{
+  color: #368FE2;
+}
+
+p, li, a, button, input, textarea {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -36,11 +40,24 @@ li{
 }
 
 button{
-  color: inherit;
   cursor: pointer;
+}
+
+input, button, textarea{
+  color: inherit;
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+textarea::placeholder, input::placeholder{
+  color: inherit;
+  opacity: .75;
+}
+
+.ref{
+  position: absolute;
+  top: 0px;
 }
 
 @media (max-width: 1100px){
@@ -49,9 +66,13 @@ button{
     line-height: 30px;
   }
   
-  p, li, a, button {
+  p, li, a, button, input, textarea {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .ref{
+    top: -10px;
   }
 }
 
@@ -61,8 +82,12 @@ button{
     line-height: 26px;
   }
   
-  p, li, a, button {
+  p, li, a, button, input, textarea {
     font-size: 12px;
     line-height: 20px;
+  }
+
+  .ref{
+    top: -15px;
   }
 }

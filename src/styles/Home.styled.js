@@ -1,15 +1,19 @@
 import styled from 'styled-components'
 
-const HomeStyle = styled.div`
+const HomeStyle = styled.section`
     width: 100%;
     height: 100vh;
     padding: 1.5rem 6rem;
-    color: ${({theme}) => theme.colors.primary};
     background: ${({theme}) => theme.colors.homeGradient};
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .container{
+        width: 100%;
+        // max-width: 1400px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     main{
         position: relative;
@@ -23,6 +27,7 @@ const HomeStyle = styled.div`
                 font-size: 32px;
             }
             p{
+                font-weight: ${({theme}) => theme.fonts.weight.light};
                 margin: 1rem 0 1.5rem;
                 max-width: 33ch;
 
@@ -36,8 +41,8 @@ const HomeStyle = styled.div`
                 transition: all .1s ease-in;
             }
             .bordered-btn{
-                font-weight: 400;
                 margin-right: 1rem;
+                font-weight: ${({theme}) => theme.fonts.weight.reg};
                 border: 2px solid ${({theme}) => theme.colors.primary};
 
                 &:hover{
@@ -46,8 +51,8 @@ const HomeStyle = styled.div`
                 }
             }
             .filled-btn{
-                font-weight: 400;
                 color: #F8F8F8;
+                font-weight: ${({theme}) => theme.fonts.weight.filled};
                 border: 2px solid ${({theme}) => theme.colors.secondary};
                 background-color: ${({theme}) => theme.colors.secondary};
 
@@ -126,7 +131,7 @@ const HomeStyle = styled.div`
         }
     
         footer{
-            top: -0.35rem;
+            top: -0.75rem;
         }
     }
 
@@ -162,7 +167,7 @@ const HomeStyle = styled.div`
         }
     
         footer{
-            top: -0.25rem;
+            top: -1rem;
         }
     }
 `

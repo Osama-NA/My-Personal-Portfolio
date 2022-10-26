@@ -6,6 +6,10 @@ const SocialsStyle = styled.ul`
 
     .cv a{
         font-weight: 600;
+
+        span{
+            opacity: 0.65;
+        }
     }
     li a{
         display: grid;
@@ -18,11 +22,15 @@ const SocialsStyle = styled.ul`
         height: 30px;
         border-radius: 9px;
         transition: all .1s ease-in;
-        border: 1px solid ${({theme}) => theme.colors.primary};
+        border: 2px solid ${({theme}) => theme.colors.primary};
+
+        svg{
+            opacity: 0.6;
+        }
 
         &:hover{
             color: ${({theme}) => theme.colors.secondary};
-            border: 1px solid ${({theme}) => theme.colors.secondary};
+            border: 2px solid ${({theme}) => theme.colors.secondary};
         }
     }
     
