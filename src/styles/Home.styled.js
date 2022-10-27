@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 const HomeStyle = styled.section`
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     padding: 1.5rem 6rem;
@@ -8,7 +10,7 @@ const HomeStyle = styled.section`
 
     .container{
         width: 100%;
-        // max-width: 1400px;
+        max-width: 1400px;
         height: 100%;
         display: flex;
         flex-direction: column;

@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
 const ProjectsStyle = styled.section`
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
     padding: 8rem 6rem;
     background: ${({theme}) => theme.colors.ternary2};
 
+    .container{ 
+        max-width: 1400px;
+    }
     header{
         display: flex;
         align-items: center;

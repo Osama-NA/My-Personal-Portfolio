@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { lightTheme, darkTheme } from "../utils/themes";
 
 const HeaderStyle = styled.header`
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +18,7 @@ const HeaderStyle = styled.header`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // max-width: 1400px;
+    max-width: 1400px;
   }
 
   .logo {

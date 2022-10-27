@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import ContactForm from './ContactForm'
+import SideContent from './SideContent'
 import ContactStyle from "../../styles/Contact.styled";
 
 const Contact = ({contactRef}) => {
@@ -11,6 +12,7 @@ const Contact = ({contactRef}) => {
 
         <main className='content'>
           <ContactForm />
+          <SideContent />
         </main>
       </div>
     </ContactStyle>

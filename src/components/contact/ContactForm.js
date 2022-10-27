@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <form>
         <h1>
-            Send me a message, let's work together 
+            Send me a message, let's get in touch
             <span>!</span>
         </h1>
 

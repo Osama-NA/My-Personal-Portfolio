@@ -6,7 +6,7 @@ import SocialsStyle from '../../../styles/Socials.styled'
 
 const Socials = () => {
   return (
-    <SocialsStyle>
+    <SocialsStyle className='socials'>
       <li className="cv">
         <a 
           href='https://res.cloudinary.com/osama-na/image/upload/v1666462637/CV_abbbgz.pdf'
