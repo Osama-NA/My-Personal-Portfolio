@@ -49,8 +49,11 @@ const ContactStyle = styled.section`
                 margin-bottom: 2rem;
                 border: 2px solid ${({ theme }) => theme.colors.primary};
                 border-radius: 17.5px;
-                // overflow: hidden;
-                
+
+                input:-webkit-autofill { 
+                    -webkit-text-fill-color: ${({ theme }) => theme.colors.primary} !important;
+                    -webkit-background-clip: text;
+                }
                 label{
                     position: absolute;
                     top: -11px;
@@ -63,7 +66,6 @@ const ContactStyle = styled.section`
                 textarea{
                     overflow: hidden;
                     min-height: 250px;
-                    // max-height: 175px;
                     resize: none;
                     padding: 1.2rem 1.85rem;
                     font-weight: ${({ theme }) => theme.fonts.weight.mid};
@@ -114,6 +116,11 @@ const ContactStyle = styled.section`
                 opacity: 1;
             }
         }
+    }
+
+    .loading-spinner{
+        position: relative;
+        top: 3rem;
     }
 
     @media (max-width: 1600px){
@@ -320,6 +327,11 @@ const ContactStyle = styled.section`
                     }
                 }
             }
+        }
+        
+        .loading-spinner{
+            position: relative;
+            top: 2rem;
         }
     }
 

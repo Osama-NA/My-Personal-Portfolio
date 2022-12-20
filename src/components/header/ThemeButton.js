@@ -16,6 +16,7 @@ const ThemeButton = ({themeButtonRef, setHeaderRefresh, headerRefresh}) => {
       className="theme-button" 
       onClick={changeTheme}
       onMouseOver={() => setHeaderRefresh(!headerRefresh)}
+      onAuxClickCapture={() => console.log(1)}
     >
       <div className="dot"></div>
     </button>

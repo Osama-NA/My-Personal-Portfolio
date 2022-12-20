@@ -4,7 +4,7 @@ import { darkTheme, lightTheme } from "../utils/themes";
 const ThemeContext = createContext(null);
 
 const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(lightTheme);
 
   // Set theme to previously set theme on last visit if any
   useEffect(() => {

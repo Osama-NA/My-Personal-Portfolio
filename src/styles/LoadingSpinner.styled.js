@@ -14,6 +14,7 @@ const LoadingSpinnerStyle = styled.div`
     animation: spin 1s linear infinite;
   }
   .loader-2 {
+    margin-left: -.5px;
     animation: reversed-spin 1s linear infinite;
   }
 
@@ -43,7 +44,7 @@ const LoadingSpinnerStyle = styled.div`
     .loader-2 {
       width: 14.5px;
       height: 14.5px;
-      margin-bottom: 0.6px;
+      margin-bottom: 0.1px;
       margin-left: 0.5px;
     }
   }
@@ -56,7 +57,7 @@ const LoadingSpinnerStyle = styled.div`
     .loader-2 {
       width: 12.5px;
       height: 12.5px;
-      margin-bottom: 0.04px;
+      margin-bottom: 0.03px;
       margin-left: 0px;
     }
   }

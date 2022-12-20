@@ -5,11 +5,13 @@ const ProjectsStyle = styled.section`
     justify-content: center;
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding: 8rem 6rem;
     background: ${({theme}) => theme.colors.ternary2};
 
     .container{ 
         max-width: 1400px;
+        width: 100%;
     }
     header{
         display: flex;
@@ -52,6 +54,13 @@ const ProjectsStyle = styled.section`
         padding-top: 4rem;
         gap: 1.5rem;
 
+        .note{
+            font-weight: ${({theme}) => theme.fonts.weight.mid};
+            span{
+                font-weight: ${({theme}) => theme.fonts.weight.bold};
+                color: ${({theme}) => theme.colors.secondary};
+            }
+        }
         .project{
             position: relative;
             display: grid;

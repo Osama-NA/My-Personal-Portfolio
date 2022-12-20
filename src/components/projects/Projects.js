@@ -31,9 +31,11 @@ const Projects = ({ projectsRef }) => {
 
         <main className='projects'>
           {
-            filteredProjects.map((project, i) => {
+            filteredProjects.length > 0 ? filteredProjects.map((project, i) => {
               return <Project key={i} project={project} />
-            })
+            }) : (
+              <p className="note">No projects found that are built with <span>'{projectsFilter}'</span>, try a different language or framework.</p>
+            )
           }
         </main>
       </div>

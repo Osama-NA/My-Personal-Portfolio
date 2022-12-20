@@ -7,7 +7,8 @@ export const darkTheme = {
         homeGradient: 'linear-gradient(180deg, #05151D 1%, #041D2B 99%)',
         primary2:'#05151D',
         ternary2:'#041D2B',
-        project_background: '#ececec'
+        project_background: '#ececec',
+        tab_background: 'rgb(4 29 43 / 42%);'
     },
     fonts: {
         weight: {
@@ -34,7 +35,8 @@ export const lightTheme = {
         homeGradient: 'linear-gradient(180deg, #FFFFFF 1%, #ececec 99%)',
         primary2: '#F8F8F8',
         ternary2: '#ececec',
-        project_background: '#ececec'
+        project_background: '#ececec',
+        tab_background: 'rgb(4 29 43 / 42%);'
     },
     fonts: {
         weight: {

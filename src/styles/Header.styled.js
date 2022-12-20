@@ -64,7 +64,6 @@ const HeaderStyle = styled.header`
       place-items: center;
       width: 45px;
       height: 45px;
-      border: 2px solid ${({ theme }) => theme.colors.primary};
       border-radius: 15px;
       z-index: 0;
       margin-left: 1rem;

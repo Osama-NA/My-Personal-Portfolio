@@ -1,18 +1,18 @@
-import React from 'react'
-import LoadingPageStyle from '../../../styles/LoadingPage.styled'
-import LoadingSpinner from '../loading-spinner/LoadingSpinner'
+import React from "react";
+import LoadingPageStyle from "../../../styles/LoadingPage.styled";
+import LoadingSpinner from "../loading-spinner/LoadingSpinner";
 
 const LoadingPage = () => {
   return (
     <LoadingPageStyle>
-        <h1 className="logo">
-            Osama
-            <span>.</span>
-        </h1>
+      <h1 className="logo">
+        Osama
+        <span>.</span>
+      </h1>
 
-        <LoadingSpinner />
+      <LoadingSpinner />
     </LoadingPageStyle>
-  )
-}
+  );
+};
 
-export default LoadingPage
+export default LoadingPage;
